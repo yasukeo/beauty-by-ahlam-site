@@ -59,11 +59,13 @@
     padding:18px 0;
   }
   .logo{
+    display:flex; align-items:center; gap:10px;
     font-family:var(--font-display);
     font-weight:600;
     font-size:1.3rem;
     letter-spacing:0.01em;
   }
+  .logo-mark{ height:46px; width:auto; flex-shrink:0; }
   .logo span{ color:var(--zellige); }
   .nav-links{ display:flex; gap:30px; font-size:0.93rem; font-weight:500; }
   .nav-links a{ position:relative; padding:4px 0; }
@@ -114,6 +116,7 @@
     header .wrap{ padding:0 34px; }
     .nav{ padding:38px 0; }
     .logo{ font-size:1.05rem; }
+    .logo-mark{ height:38px; }
     .nav-cta{ padding:8px 14px; font-size:0.76rem; }
   }
 
@@ -383,6 +386,14 @@
   .info-icon{ width:22px; height:22px; color:var(--brass-light); flex-shrink:0; margin-top:2px; }
   .info-row h4{ font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; color:rgba(248,243,232,0.55); margin-bottom:6px; font-family:var(--font-mono); }
   .info-row p{ font-size:0.98rem; }
+  .social-links{ display:flex; gap:18px; margin-top:4px; }
+  .social-links a{
+    display:flex; align-items:center; gap:7px;
+    font-size:0.92rem; color:var(--plaster-soft);
+    transition:color 0.2s ease;
+  }
+  .social-links a:hover{ color:var(--brass-light); }
+  .social-links svg{ width:20px; height:20px; flex-shrink:0; }
   .hours-table{ width:100%; border-collapse:collapse; font-size:0.92rem; }
   .hours-table td{ padding:9px 0; border-bottom:1px solid rgba(248,243,232,0.1); }
   .hours-table td:last-child{ text-align:right; font-family:var(--font-mono); color:var(--brass-light); }
